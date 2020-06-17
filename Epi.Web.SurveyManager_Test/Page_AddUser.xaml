@@ -1,0 +1,43 @@
+﻿<Page x:Class="Epi.Web.SurveyManager.Client.Page_AddUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Epi.Web.SurveyManager.Client"
+      mc:Ignorable="d" 
+      d:DesignHeight="690" d:DesignWidth="630"
+      Title="Add User">
+
+    <Grid Height="692" Width="627"   >
+        <GroupBox Background="#FFE5E19E" Header="Current Organization" Height="72" HorizontalAlignment="Left" Margin="30,10,0,0" Name="groupBox1" Panel.ZIndex="-1" VerticalAlignment="Top" Width="551" FontSize="13.333" FontWeight="Bold">
+            <TextBlock HorizontalAlignment="Left" Margin="84,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="356" Name="TextBlock_OrganizationName" />
+        </GroupBox>
+        <GroupBox Background="#FFE5E19E" Header="Organization user Info" Height="320" HorizontalAlignment="Left" Margin="30,87,0,0" Name="groupBox" Panel.ZIndex="-1" VerticalAlignment="Top" Width="551" FontSize="13.333" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <GroupBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.331"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.994"/>
+                </TransformGroup>
+            </GroupBox.RenderTransform>
+            <Button Content="Add User" HorizontalAlignment="Left" x:Name="AddEditUser" Margin="340,206,0,0" VerticalAlignment="Top" Width="171" Click="Button_Click"/>
+
+        </GroupBox>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="42,169,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,172,0,0" TextWrapping="Wrap" Text="" Name="FName" VerticalAlignment="Top" Width="393" RenderTransformOrigin="0.208,1.312"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="42,196,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,200,0,0" TextWrapping="Wrap" Text="" Name ="LName" VerticalAlignment="Top" Width="393" RenderTransformOrigin="0.208,1.312"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="42,224,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,228,0,0" TextWrapping="Wrap" Text="" Name="Email" VerticalAlignment="Top" Width="393" RenderTransformOrigin="0.208,1.312"/>
+        <Label Content="Phone number" HorizontalAlignment="Left" Margin="42,253,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,256,0,0" TextWrapping="Wrap" Text="(###)-###-####" Name="PhoneNum" VerticalAlignment="Top" Width="393" RenderTransformOrigin="0.208,1.312"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,127,0,0" TextWrapping="Wrap" Text="" Name="Message" VerticalAlignment="Top" Width="393"/>
+        <CheckBox Content="" HorizontalAlignment="Left"  Name="IsActive" Margin="160,291,0,0" VerticalAlignment="Top" IsChecked="True" IsThreeState="True"/>
+        <Label Content="Active" HorizontalAlignment="Left" Margin="42,284,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="254,315,0,0" VerticalAlignment="Top" Width="108" x:Name="Cancel1" FontWeight="Bold" Click="Button_Click_1"/>
+
+
+
+    </Grid>
+</Page>
